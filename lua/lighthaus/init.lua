@@ -1,20 +1,20 @@
 local function set_highlight(group, fg, bg, attr)
-  if type(fg) == 'table' then
-    vim.cmd('hi ' .. group .. ' guifg=' .. fg.gui .. ' ctermfg=' .. fg.cterm)
+  if fg and fg ~= '' and #fg > 0 then
+    vim.cmd('hi ' .. group .. ' guifg=' .. fg)
   else
-    vim.cmd('hi ' .. group .. ' guifg=NONE ctermfg=NONE')
+    vim.cmd('hi ' .. group .. ' guifg=NONE')
   end
 
-  if type(bg) == 'table' then
-    vim.cmd('hi ' .. group .. ' guibg=' .. bg.gui .. ' ctermbg=' .. bg.cterm)
+  if bg and bg ~= '' and #bg > 0 then
+    vim.cmd('hi ' .. group .. ' guibg=' .. bg)
   else
-    vim.cmd('hi ' .. group .. ' guibg=NONE ctermbg=NONE')
+    vim.cmd('hi ' .. group .. ' guibg=NONE')
   end
 
   if attr and attr ~= '' and #attr > 0 then
-    vim.cmd('hi ' .. group .. ' gui=' .. attr .. ' cterm=' .. attr)
+    vim.cmd('hi ' .. group .. ' gui=' .. attr)
   else
-    vim.cmd('hi ' .. group .. ' gui=NONE cterm=NONE')
+    vim.cmd('hi ' .. group .. ' gui=NONE')
   end
 end
 
@@ -32,6 +32,7 @@ function M.setup(options)
 
   local colors = require('lighthaus.colors')
   local formats = require('lighthaus.formats')
+  local util = require('lighthaus.utils')
 
   local bg
   if options.bg_dark then
@@ -39,6 +40,14 @@ function M.setup(options)
   else
     bg = colors.bg
   end
+
+  -- - - - - - - - - -
+  -- LSP
+  -- - - - - - - - - -
+  set_highlight('LspDiagnosticsDefaultError', colors.lsp.error, bg)
+  set_highlight('LspDiagnosticsDefaultWarning', colors.lsp.warning, bg)
+  set_highlight('LspDiagnosticsDefaultInformation', colors.lsp.information, bg)
+  set_highlight('LspDiagnosticsDefaultHint', colors.lsp.hint, bg)
 
   -- ― ― ― ― ― ― ― ― ―
   -- EDITOR SETTINGS

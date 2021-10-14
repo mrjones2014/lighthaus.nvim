@@ -6,3 +6,5 @@ Accepts one option, `bg_dark`, to use a black background instead of the default 
 
 Running `:colorscheme lighthaus` will set the theme with the default background. To use the dark background,
 you can run `:lua require('lighthaus').setup({ bg_dark = true })`.
+
+**NOTE:** Requires `termguicolors`.
