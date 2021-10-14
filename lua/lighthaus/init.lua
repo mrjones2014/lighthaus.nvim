@@ -32,7 +32,6 @@ function M.setup(options)
 
   local colors = require('lighthaus.colors')
   local formats = require('lighthaus.formats')
-  local util = require('lighthaus.utils')
 
   local bg
   if options.bg_dark then
@@ -522,24 +521,24 @@ function M.setup(options)
   -- ― ― ― ― ― ― ― ― ―
   -- NEOVIM COLOR BUFFER
   -- ― ― ― ― ― ― ― ― ―
-  vim.g.terminal_color_0 = colors.black.gui
-  vim.g.terminal_color_1 = colors.red.gui
-  vim.g.terminal_color_2 = colors.green.gui
-  vim.g.terminal_color_3 = colors.orange.gui
-  vim.g.terminal_color_4 = colors.blue.gui
-  vim.g.terminal_color_5 = colors.purple.gui
-  vim.g.terminal_color_6 = colors.cyan.gui
-  vim.g.terminal_color_7 = colors.white.gui
-  vim.g.terminal_color_8 = colors.grey.gui
-  vim.g.terminal_color_9 = colors.red2.gui
-  vim.g.terminal_color_10 = colors.green2.gui
-  vim.g.terminal_color_11 = colors.orange2.gui
-  vim.g.terminal_color_12 = colors.blue2.gui
-  vim.g.terminal_color_13 = colors.purple2.gui
-  vim.g.terminal_color_14 = colors.cyan2.gui
-  vim.g.terminal_color_15 = colors.white2.gui
-  vim.g.terminal_color_background = bg.gui
-  vim.g.terminal_color_foreground = colors.fg.gui
+  vim.g.terminal_color_0 = colors.black
+  vim.g.terminal_color_1 = colors.red
+  vim.g.terminal_color_2 = colors.green
+  vim.g.terminal_color_3 = colors.orange
+  vim.g.terminal_color_4 = colors.blue
+  vim.g.terminal_color_5 = colors.purple
+  vim.g.terminal_color_6 = colors.cyan
+  vim.g.terminal_color_7 = colors.white
+  vim.g.terminal_color_8 = colors.grey
+  vim.g.terminal_color_9 = colors.red2
+  vim.g.terminal_color_10 = colors.green2
+  vim.g.terminal_color_11 = colors.orange2
+  vim.g.terminal_color_12 = colors.blue2
+  vim.g.terminal_color_13 = colors.purple2
+  vim.g.terminal_color_14 = colors.cyan2
+  vim.g.terminal_color_15 = colors.white2
+  vim.g.terminal_color_background = bg
+  vim.g.terminal_color_foreground = colors.fg
 end
 
 return M
