@@ -5,7 +5,7 @@ local lualine_colors = {
   normal = util.tint_lualine_color(colors.blue),
   insert = util.tint_lualine_color(colors.green),
   command = util.tint_lualine_color(colors.purple),
-  visual = util.tint_lualine_color(colors.yellow),
+  visual = util.tint_lualine_color(colors.hl_yellow),
   replace = util.tint_lualine_color(colors.red),
   inactive = {
     a = { bg = colors.bg, fg = colors.fg_nc_statusline },
