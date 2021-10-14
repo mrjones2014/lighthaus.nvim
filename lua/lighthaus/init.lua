@@ -121,8 +121,13 @@ function M.setup(options)
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('MatchParen', colors.hl_orange)
   set_highlight('SpecialKey', colors.white2)
-  set_highlight('Visual', colors.selection_fg, colors.selection_bg)
-  set_highlight('VisualNOS', colors.selection_fg, colors.selection_bg)
+  if options.bg_dark then
+    set_highlight('Visual', colors.selection_fg, colors.selection_bg_dark)
+    set_highlight('VisualNOS', colors.selection_fg, colors.selection_bg_dark)
+  else
+    set_highlight('Visual', colors.selection_fg, colors.selection_bg)
+    set_highlight('VisualNOS', colors.selection_fg, colors.selection_bg)
+  end
 
   -- ― ― ― ― ― ― ― ― ―
   -- SPELL CHECK

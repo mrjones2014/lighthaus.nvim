@@ -23,6 +23,7 @@ local M = {
   hl_yellow = '#FFFF00',
   hl_orange = '#FF4D00',
   hl_bg = '#090B26',
+  hl_bg_dark = '#282c34',
   gutter_bg = '#282c34',
   non_text = '#373C45',
   lsp = {
@@ -35,6 +36,7 @@ local M = {
 
 M.line_fg = M.grey
 M.selection_bg = M.hl_bg
+M.selection_bg_dark = M.hl_bg_dark
 M.selection_fg = M.hl_orange
 
 M.vsplit_fg = M.hl_bg
