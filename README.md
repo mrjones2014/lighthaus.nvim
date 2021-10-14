@@ -2,6 +2,14 @@
 
 A Lua implementation of [lighthaus-theme/vim-lighthaus](https://github.com/lighthaus-theme/vim-lighthaus)!
 
+Default:
+
+![normal](./assets/normal.png)
+
+Dark:
+
+![dark](./assets/dark.png)
+
 Accepts one option, `bg_dark`, to use a black background instead of the default (#18191E).
 
 Running `:colorscheme lighthaus` will set the theme with the default background. To use the dark background,
@@ -25,3 +33,7 @@ require('lualine').setup({
   -- your other lualine config here
 })
 ```
+
+## Terminal Themes
+
+A theme for Kitty can be found in `extra/`. Feel free to submit a PR to add a theme for your favorite editor.
