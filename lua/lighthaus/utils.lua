@@ -57,4 +57,23 @@ function M.tint_lualine_color(color, bg, bg_dark)
   return group
 end
 
+--- Merge two tables together. Modifies t1 table in place.
+---@param t1 table
+---@param t2 table
+---@return table
+function M.merge_tables(t1, t2)
+  for k, v in pairs(t2) do
+    if type(v) == 'table' then
+      if type(t1[k] or false) == 'table' then
+        M.merge_tables(t1[k] or {}, t2[k] or {})
+      else
+        t1[k] = v
+      end
+    else
+      t1[k] = v
+    end
+  end
+  return t1
+end
+
 return M

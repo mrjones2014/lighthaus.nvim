@@ -10,12 +10,20 @@ Dark:
 
 ![dark](./assets/dark.png)
 
-Accepts one option, `bg_dark`, to use a black background instead of the default (#18191E).
-
-Running `:colorscheme lighthaus` will set the theme with the default background. To use the dark background,
-you can run `:lua require('lighthaus').setup({ bg_dark = true })`.
-
 **NOTE:** Requires `termguicolors`.
+
+## Config
+
+Running `:colorscheme lighthaus` will set the theme with the default background. Otherwise, see configuration below.
+
+```lua
+require('lighthaus').setup({
+  -- set true to use dark bg by default
+  bg_dark = false,
+  -- see colors.lua to see colors table, set overrides here to be merged with defaults
+  colors = {},
+})
+```
 
 ## Lualine Themes
 

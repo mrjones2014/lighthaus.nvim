@@ -33,8 +33,12 @@ function M.setup(options)
   local colors = require('lighthaus.colors')
   local formats = require('lighthaus.formats')
 
+  if options and options.colors and type(options.colors) then
+    colors = require('lighthaus.utils').merge_tables(colors, options.colors)
+  end
+
   local bg
-  if options.bg_dark then
+  if options and options.bg_dark then
     bg = colors.bg_dark
   else
     bg = colors.bg
