@@ -4,7 +4,7 @@ A Lua implementation of [lighthaus-theme/vim-lighthaus](https://github.com/light
 
 Default:
 
-![normal](./assets/normal.png)
+![normal](./assets/default.png)
 
 Dark:
 
