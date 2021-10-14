@@ -9,6 +9,7 @@ local M = {
   orange2 = '#ED722E',
   blue = '#1D918B',
   blue2 = '#47A8A1',
+  blue3 = '#0db9d7',
   purple = '#D16BB7',
   purple2 = '#D68EB2',
   cyan = '#00BFA4',
