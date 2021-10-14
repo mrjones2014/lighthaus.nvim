@@ -36,21 +36,21 @@ function M.lighten(hex, amount, fg)
   return M.blend(hex, fg or M.fg, math.abs(amount))
 end
 
-function M.tint_lualine_color(color, dark)
+function M.tint_lualine_color(color, bg, bg_dark)
   local colors = require('lighthaus.colors')
   local group = {
-    a = { bg = color, fg = colors.bg },
+    a = { bg = color, fg = bg },
     b = { bg = M.darken(color, 0.2), fg = M.lighten(color, 0.2) },
   }
   if vim.o.background == 'dark' then
     group.c = {
-      bg = M.darken(color, 0.01, colors.bg),
+      bg = M.darken(color, 0.01, bg_dark),
       fg = M.lighten(color, 0.4, colors.fg),
     }
   else
     -- inverting colors for light colorschemes
     group.c = {
-      bg = M.lighten(color, 0.01, colors.bg),
+      bg = M.lighten(color, 0.01, bg_dark),
       fg = M.darken(color, 0.4, colors.fg),
     }
   end
