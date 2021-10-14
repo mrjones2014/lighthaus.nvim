@@ -275,7 +275,15 @@ function M.setup(options)
   -- NVIM-TREE
   -- https://github.com/kyazdani42/nvim-tree.lua
   -- ― ― ― ― ― ― ― ― ―
-  -- set_highlight('NvimTreeFolderName', colors.fg, bg)
+  set_highlight('NvimTreeFolderName', colors.fg, bg)
+  set_highlight('NvimTreeOpenedFolderName', colors.fg, bg)
+
+  -- ― ― ― ― ― ― ― ― ―
+  -- LUALINE
+  -- https://github.com/hoob3rt/lualine.nvim
+  -- ― ― ― ― ― ― ― ― ―
+  set_highlight('NvimTreeFolderName', colors.fg, bg)
+  set_highlight('NvimTreeOpenedFolderName', colors.fg, bg)
 
   -- ― ― ― ― ― ― ― ― ―
   -- BEACON.NVIM
