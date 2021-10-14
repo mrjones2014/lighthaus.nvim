@@ -36,7 +36,8 @@ function M.lighten(hex, amount, fg)
   return M.blend(hex, fg or M.fg, math.abs(amount))
 end
 
-function M.tint_lualine_color(color, colors)
+function M.tint_lualine_color(color)
+  local colors = require('lighthaus.colors')
   local group = {
     a = { bg = color, fg = colors.bg },
     b = { bg = M.darken(color, 0.2), fg = M.lighten(color, 0.2) },
