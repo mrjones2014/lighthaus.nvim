@@ -34,4 +34,6 @@ M.vsplit_fg = M.hl_bg
 M.vsplit_fg_light = M.white2
 M.vsplit_bg = M.black
 
+M.fg_nc_statusline = require('lighthaus.utils').darken(M.fg, 0.5)
+
 return M
