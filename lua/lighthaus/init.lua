@@ -58,6 +58,7 @@ function M.setup(options)
   set_highlight('CursorLineNr', colors.hl_yellow, colors.black)
   set_highlight('ColorColumn', colors.black)
   set_highlight('LineNr', colors.line_fg, bg)
+  set_highlight('EndOfBuffer', bg, bg)
 
   -- ― ― ― ― ― ― ― ― ―
   -- DIFFERENCES
