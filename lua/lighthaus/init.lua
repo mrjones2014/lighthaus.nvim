@@ -276,19 +276,19 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- BEACON.NVIM
-  -- httpcolors.//github.com/DanilaMihailov/beacon.nvim
+  -- https.//github.com/DanilaMihailov/beacon.nvim
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('Beacon', '', colors.grey, '')
 
   -- ― ― ― ― ― ― ― ― ―
   -- CtrlP
-  -- httpcolors.//github.com/kien/ctrlp.vim
+  -- https.//github.com/kien/ctrlp.vim
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('CtrlPMatch', colors.cyan2, '', '')
 
   -- ― ― ― ― ― ― ― ― ―
   -- FZF
-  -- httpcolors.//github.com/junegunn/fzf.vim
+  -- https.//github.com/junegunn/fzf.vim
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('FZF_fg', colors.white, '', '')
   set_highlight('FZF_bg', '', colors.black, '')
@@ -326,7 +326,7 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- NERDTREE
-  -- httpcolors.//github.com/preservim/nerdtree
+  -- https.//github.com/preservim/nerdtree
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('NerdTreeClosable', colors.orange2, '', '')
   set_highlight('NerdTreeOpenable', colors.green2, '', '')
@@ -344,7 +344,7 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- TREESITTER
-  -- httpcolors.//github.com/nvim-treesitter/nvim-treesitter
+  -- https.//github.com/nvim-treesitter/nvim-treesitter
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('TSTypeBuiltin', colors.orange2, '', '')
   vim.cmd('hi link TSInclude Include')
@@ -386,7 +386,7 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIM ALE
-  -- httpcolors.//github.com/dense-analysis/ale
+  -- https.//github.com/dense-analysis/ale
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('AleError', colors.red, '', '')
   set_highlight('AleErrorSign', colors.red2, '', '')
@@ -399,7 +399,7 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIM COC
-  -- httpcolors.//github.com/neoclide/coc.nvim
+  -- https.//github.com/neoclide/coc.nvim
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('CocInfoHighlight', colors.purple2, '', '')
   set_highlight('CocErrorHighlight', colors.red2, '', '')
@@ -417,7 +417,7 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIM FUGITIVE
-  -- httpcolors.//github.com/tpope/vim-fugitive
+  -- https.//github.com/tpope/vim-fugitive
   -- ― ― ― ― ― ― ― ― ―
   vim.cmd('hi link diffAdded DiffAdd')
   vim.cmd('hi link diffChanged DiffChange')
@@ -425,7 +425,7 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIM GIT GUTTER
-  -- httpcolors.//github.com/airblade/vim-gitgutter
+  -- https.//github.com/airblade/vim-gitgutter
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('GitGutterAdd', colors.green, '', '')
   set_highlight('GitGutterDelete', colors.red, '', '')
@@ -434,14 +434,14 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIM INDENT GUIDES
-  -- httpcolors.//github.com/nathanaelkane/vim-indent-guides
+  -- https.//github.com/nathanaelkane/vim-indent-guides
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('IndentGuidesEven', colors.white, '', '')
   set_highlight('IndentGuidesOdd', colors.white2, '', '')
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIM PLUG
-  -- httpcolors.//github.com/junegunn/vim-plug
+  -- https.//github.com/junegunn/vim-plug
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('plugInstall', colors.green, '', '')
   set_highlight('plugClean', colors.blue, '', '')
@@ -449,13 +449,13 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIM SIGNATURE
-  -- httpcolors.//github.com/kshenoy/vim-signature
+  -- https.//github.com/kshenoy/vim-signature
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('SignatureMarkText', colors.hl_orange, '', '')
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIM SIGNIFY
-  -- httpcolors.//github.com/mhinz/vim-signify
+  -- https.//github.com/mhinz/vim-signify
   -- ― ― ― ― ― ― ― ― ―
   vim.cmd('hi link SignifySignAdd GitGutterAdd')
   vim.cmd('hi link SignifySignChange GitGutterChange')
@@ -463,7 +463,7 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIM STARTIFY
-  -- httpcolors.//github.com/mhinz/vim-startify
+  -- https.//github.com/mhinz/vim-startify
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('StartifyBracket', colors.grey, '', '')
   set_highlight('StartifyFile', colors.green2, '', '')
@@ -478,7 +478,7 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIMTEX
-  -- vimtex: httpcolors.//github.com/lervag/vimtex
+  -- vimtex: https.//github.com/lervag/vimtex
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('texCmd', colors.cyan2, '', '')
   set_highlight('texCmdAuthor', colors.fg_alt, '', formats.bold)
@@ -494,7 +494,7 @@ function M.setup(options)
 
   -- ― ― ― ― ― ― ― ― ―
   -- VIMWIKI
-  -- httpcolors.//github.com/vimwiki/vimwiki
+  -- https.//github.com/vimwiki/vimwiki
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('VimwikiHeader1', colors.hl_yellow, '', formats.bold)
   set_highlight('VimwikiHeader2', colors.green, '', formats.bold)
