@@ -285,6 +285,12 @@ function M.setup(options)
 
   -- + + + + + + + + + PLUGINS + + + + + + + + +
 
+  -- - - - - - - - - -
+  -- GITSIGNS.NVIM
+  -- https://github.com/lewis6991/gitsigns.nvim
+  -- - - - - - - - - -
+  set_highlight('GitSignsCurrentLineBlame', colors.non_text, bg)
+
   -- ― ― ― ― ― ― ― ― ―
   -- NVIM-TREE
   -- https://github.com/kyazdani42/nvim-tree.lua
