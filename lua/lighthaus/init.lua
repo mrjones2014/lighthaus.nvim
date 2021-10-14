@@ -285,6 +285,7 @@ function M.setup(options)
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('NvimTreeFolderName', colors.fg, bg)
   set_highlight('NvimTreeOpenedFolderName', colors.fg, bg)
+  set_highlight('NvimTreeEmptyFolderName', colors.fg, bg)
   set_highlight('NvimTreeGitNew', colors.green, bg)
   set_highlight('NvimTreeGitDirty', colors.blue, bg)
   set_highlight('NvimTreeEndOfBuffer', bg, bg)
