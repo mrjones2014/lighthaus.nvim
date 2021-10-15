@@ -59,7 +59,11 @@ function M.setup(options)
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('Normal', colors.fg, bg)
   set_highlight('Cursor', colors.hl_yellow, bg)
-  set_highlight('CursorLine')
+  if vim.o.cursorline then
+    set_highlight('CursorLine', nil, colors.black)
+  else
+    set_highlight('CursorLine')
+  end
   set_highlight('CursorColumn')
   set_highlight('CursorLineNr', colors.hl_yellow, colors.black)
   set_highlight('ColorColumn', colors.black)
@@ -295,7 +299,13 @@ function M.setup(options)
   -- GITSIGNS.NVIM
   -- https://github.com/lewis6991/gitsigns.nvim
   -- - - - - - - - - -
-  set_highlight('GitSignsCurrentLineBlame', colors.non_text, bg)
+  if vim.o.cursorline then
+    print(true)
+    set_highlight('GitSignsCurrentLineBlame', colors.white2)
+  else
+    print(false)
+    set_highlight('GitSignsCurrentLineBlame', colors.non_text)
+  end
 
   -- ― ― ― ― ― ― ― ― ―
   -- NVIM-TREE
