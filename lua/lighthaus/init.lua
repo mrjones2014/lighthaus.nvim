@@ -21,6 +21,8 @@ end
 local M = {}
 
 function M.setup(options)
+  options = options or {}
+
   vim.cmd([[
     set background=dark
     highlight clear
