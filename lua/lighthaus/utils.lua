@@ -76,4 +76,24 @@ function M.merge_tables(t1, t2)
   return t1
 end
 
+function M.set_highlight(group, fg, bg, attr)
+  if fg and fg ~= '' and #fg > 0 then
+    vim.cmd('hi ' .. group .. ' guifg=' .. fg)
+  else
+    vim.cmd('hi ' .. group .. ' guifg=NONE')
+  end
+
+  if bg and bg ~= '' and #bg > 0 then
+    vim.cmd('hi ' .. group .. ' guibg=' .. bg)
+  else
+    vim.cmd('hi ' .. group .. ' guibg=NONE')
+  end
+
+  if attr and attr ~= '' and #attr > 0 then
+    vim.cmd('hi ' .. group .. ' gui=' .. attr)
+  else
+    vim.cmd('hi ' .. group .. ' gui=NONE')
+  end
+end
+
 return M

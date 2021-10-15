@@ -28,11 +28,14 @@ require('lighthaus').setup({
 ## Plugin Support
 
 - [lualine](https://github.com/hoob3rt/lualine.nvim)
+- [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
+- [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [ale](https://github.com/dense-analysis/ale)
 - [beacon](https://github.com/DanilaMihailov/beacon.nvim)
 - [coc](https://github.com/neoclide/coc.nvim)
 - [fzf](https://github.com/junegunn/fzf)
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [NERDTree](https://github.com/preservim/nerdtree)
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
@@ -42,6 +45,8 @@ require('lighthaus').setup({
 - [vim-startify](https://github.com/mhinz/vim-startify)
 - [vimtex](https://github.com/lervag/vimtex)
 - [vimwiki](https://github.com/vimwiki/vimwiki)
+
+Plus Neovim's built-in LSP.
 
 ### Using Lualine Themes
 
