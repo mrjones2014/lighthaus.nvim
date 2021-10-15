@@ -44,4 +44,4 @@ require('lualine').setup({
 
 ## Terminal Themes
 
-A theme for Kitty can be found in `extra/`. Feel free to submit a PR to add a theme for your favorite editor.
+A theme for Kitty can be found in `extra/`. Feel free to submit a PR to add a theme for your favorite terminal.
