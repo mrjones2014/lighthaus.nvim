@@ -28,8 +28,6 @@ require('lighthaus').setup({
 ## Plugin Support
 
 - [lualine](https://github.com/hoob3rt/lualine.nvim)
-- [airline](https://github.com/vim-airline/vim-airline)
-- [lightline](https://github.com/Brutuski/lightline.vim)
 - [ale](https://github.com/dense-analysis/ale)
 - [beacon](https://github.com/DanilaMihailov/beacon.nvim)
 - [coc](https://github.com/neoclide/coc.nvim)
@@ -65,33 +63,3 @@ require('lualine').setup({
 ## Terminal Themes
 
 A theme for Kitty can be found in `extra/`. Feel free to submit a PR to add a theme for your favorite terminal.
-
-### Using Airline Theme
-
-Lua:
-
-```lua
-vim.g.airline_theme='lighthaus'
-```
-
-Vimscript:
-
-```VimL
-let g:airline_theme='lighthaus'
-```
-
-### Using Lightline Theme
-
-Lua:
-
-```lua
-vim.g.lightline = { colorscheme = 'lighthaus' }
-```
-
-Vimscript:
-
-```VimL
-let g:lightline = {
-      \ 'colorscheme': 'lighthaus',
-      \ }
-```
