@@ -46,7 +46,7 @@ require('lighthaus').setup({
 - [vimtex](https://github.com/lervag/vimtex)
 - [vimwiki](https://github.com/vimwiki/vimwiki)
 
-Plus Neovim's built-in LSP.
+Plus Neovim's built-in LSP. Feel free to create a PR to support other plugins not listed here.
 
 ### Using Lualine Themes
 
