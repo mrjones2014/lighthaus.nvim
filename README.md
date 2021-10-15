@@ -42,6 +42,23 @@ require('lualine').setup({
 })
 ```
 
+## Other Plugin Support
+
+- [ale](https://github.com/dense-analysis/ale)
+- [beacon](https://github.com/DanilaMihailov/beacon.nvim)
+- [coc](https://github.com/neoclide/coc.nvim)
+- [fzf](https://github.com/junegunn/fzf)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
+- [vim-plug](https://github.com/junegunn/vim-plug)
+- [vim-signature](https://github.com/kshenoy/vim-signature)
+- [vim-signify](https://github.com/mhinz/vim-signify)
+- [vim-startify](https://github.com/mhinz/vim-startify)
+- [vimtex](https://github.com/lervag/vimtex)
+- [vimwiki](https://github.com/vimwiki/vimwiki)
+
 ## Terminal Themes
 
 A theme for Kitty can be found in `extra/`. Feel free to submit a PR to add a theme for your favorite terminal.
