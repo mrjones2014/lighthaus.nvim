@@ -300,10 +300,8 @@ function M.setup(options)
   -- https://github.com/lewis6991/gitsigns.nvim
   -- - - - - - - - - -
   if vim.o.cursorline then
-    print(true)
     set_highlight('GitSignsCurrentLineBlame', colors.white2)
   else
-    print(false)
     set_highlight('GitSignsCurrentLineBlame', colors.non_text)
   end
 
