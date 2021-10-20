@@ -2,11 +2,11 @@
 
 A Lua implementation of [lighthaus-theme/vim-lighthaus](https://github.com/lighthaus-theme/vim-lighthaus), with added built-in LSP support!
 
-Default:
+Default (`:colorscheme lighthaus`):
 
 ![normal](./assets/default.png)
 
-Dark:
+Dark (`:colorscheme lighthaus_dark`):
 
 ![dark](./assets/dark.png)
 
@@ -14,10 +14,8 @@ Dark:
 
 ## Config
 
-- `:colorscheme lighthaus` is equivalent to `:lua require('lighthaus').setup()`
-- `:colorscheme lighthaus_dark` is equivalent to `:lua require('lighthaus').setup({ bg_dark = true })`
-
-Alternatively, you can set the theme through the Lua API:
+You can override colors using the Lua API. Calling `setup()` will load the colorscheme, so you can omit `:colorscheme lighthaus` from
+your config when using the Lua API.
 
 ```lua
 require('lighthaus').setup({
