@@ -10,9 +10,21 @@ Dark (`:colorscheme lighthaus_dark`):
 
 ![dark](./assets/dark.png)
 
-**NOTE:** Requires `termguicolors`.
-
 ## Config
+
+Lighthaus.nvim requires `termguicolors`.
+
+`init.lua`:
+
+```lua
+vim.opt.termguicolors = true
+```
+
+`.vimrc`/`init.vim`:
+
+```VimL
+set termguicolors
+```
 
 You can override colors using the Lua API. Calling `setup()` will load the colorscheme, so you can omit `:colorscheme lighthaus` from
 your config when using the Lua API.
