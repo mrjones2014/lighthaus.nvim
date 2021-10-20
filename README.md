@@ -51,8 +51,8 @@ Plus Neovim's built-in LSP. Feel free to create a PR to support other plugins no
 
 ### Using Lualine Themes
 
-There's 2 Lualine themes, 'lighthaus', and 'lighthaus_dark'. The 'lighthaus_dark' Lualine looks better when
-using `bg_dark = true`. Lualine must be loaded _after_ Lighthaus.
+There are two Lualine themes, 'lighthaus', and 'lighthaus_dark'. Use the one that corresponds to your
+selected Lighthaus theme.
 
 Setup:
 
