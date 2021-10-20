@@ -14,8 +14,8 @@ Dark:
 
 ## Config
 
-Running `:colorscheme lighthaus` will load the Lighthaus theme with default options, and
-`:colorscheme lighthaus_dark` will load the Lighthaus theme with the `bg_dark` option set.
+- `:colorscheme lighthaus` is equivalent to `:lua require('lighthaus').setup()`
+- `:colorscheme lighthaus_dark` is equivalent to `:lua require('lighthaus').setup({ bg_dark = true })`
 
 Alternatively, you can set the theme through the Lua API:
 
