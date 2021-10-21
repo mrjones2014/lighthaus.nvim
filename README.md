@@ -40,6 +40,7 @@ require('lighthaus').setup({
 
 ## Plugin Support
 
+- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [lualine](https://github.com/hoob3rt/lualine.nvim)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
