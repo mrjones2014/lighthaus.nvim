@@ -43,6 +43,7 @@ function M.setup(options)
   require('lighthaus.plugins.startify').apply()
   require('lighthaus.plugins.vimtex').apply()
   require('lighthaus.plugins.vimwiki').apply()
+  require('lighthaus.plugins.bufferline').apply()
 end
 
 return M

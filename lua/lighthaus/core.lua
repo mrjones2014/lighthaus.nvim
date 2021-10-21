@@ -149,7 +149,7 @@ function M.apply(options)
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('Whitespace', colors.non_text)
   set_highlight('NonText', colors.non_text)
-  set_highlight('Comment', colors.white2)
+  set_highlight('Comment', colors.grey)
   set_highlight('Delimiter', colors.white2)
 
   set_highlight('Identifier', colors.white)
