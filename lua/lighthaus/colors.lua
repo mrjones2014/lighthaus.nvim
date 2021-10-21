@@ -27,12 +27,10 @@ local M = {
   hl_bg_dark = '#282c34',
   gutter_bg = '#282c34',
   non_text = '#373C45',
-  lsp = {
-    error = '#db4b4b',
-    warning = '#e0af68',
-    information = '#0db9d7',
-    hint = '#10B981',
-  },
+  lsp_error = '#db4b4b',
+  lsp_warning = '#e0af68',
+  lsp_information = '#0db9d7',
+  lsp_hint = '#10B981',
 }
 
 M.line_fg = M.grey

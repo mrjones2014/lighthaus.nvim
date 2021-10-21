@@ -1,23 +1,22 @@
 local M = {}
 
-function M.apply(options)
-  local colors = require('lighthaus.colors')
+function M.apply(colors, options)
   local formats = require('lighthaus.formats')
   local set_highlight = require('lighthaus.utils').set_highlight
 
   -- - - - - - - - - -
   -- LSP
   -- - - - - - - - - -
-  set_highlight('LspDiagnosticsDefaultError', colors.lsp.error, colors.active_bg)
-  set_highlight('LspDiagnosticsDefaultWarning', colors.lsp.warning, colors.active_bg)
-  set_highlight('LspDiagnosticsDefaultInformation', colors.lsp.information, colors.active_bg)
-  set_highlight('LspDiagnosticsDefaultHint', colors.lsp.hint, colors.active_bg)
+  set_highlight('LspDiagnosticsDefaultError', colors.lsp_error, colors.bg)
+  set_highlight('LspDiagnosticsDefaultWarning', colors.lsp_warning, colors.bg)
+  set_highlight('LspDiagnosticsDefaultInformation', colors.lsp_information, colors.bg)
+  set_highlight('LspDiagnosticsDefaultHint', colors.lsp_hint, colors.bg)
 
   -- ― ― ― ― ― ― ― ― ―
   -- EDITOR SETTINGS
   -- ― ― ― ― ― ― ― ― ―
-  set_highlight('Normal', colors.fg, colors.active_bg)
-  set_highlight('Cursor', colors.hl_yellow, colors.active_bg)
+  set_highlight('Normal', colors.fg, colors.bg)
+  set_highlight('Cursor', colors.hl_yellow, colors.bg)
   if vim.o.cursorline then
     set_highlight('CursorLine', nil, colors.black)
   else
@@ -26,8 +25,8 @@ function M.apply(options)
   set_highlight('CursorColumn')
   set_highlight('CursorLineNr', colors.hl_yellow, colors.black)
   set_highlight('ColorColumn', colors.black)
-  set_highlight('LineNr', colors.line_fg, colors.active_bg)
-  set_highlight('EndOfBuffer', colors.active_bg, colors.active_bg)
+  set_highlight('LineNr', colors.line_fg, colors.bg)
+  set_highlight('EndOfBuffer', colors.bg, colors.bg)
 
   -- ― ― ― ― ― ― ― ― ―
   -- GIT
@@ -59,9 +58,9 @@ function M.apply(options)
   set_highlight('DiffFile', colors.purple)
   set_highlight('DiffNewFile', colors.hl_yellow)
 
-  set_highlight('ErrorMsg', colors.red2, colors.active_bg)
-  set_highlight('WarningMsg', colors.orange2, colors.active_bg)
-  set_highlight('Question', colors.purple2, colors.active_bg)
+  set_highlight('ErrorMsg', colors.red2, colors.bg)
+  set_highlight('WarningMsg', colors.orange2, colors.bg)
+  set_highlight('Question', colors.purple2, colors.bg)
 
   set_highlight('Pmenu', colors.white2, colors.black)
   set_highlight('PmenuSel', colors.hl_orange, colors.hl_bg)
@@ -97,9 +96,9 @@ function M.apply(options)
   -- ― ― ― ― ― ― ― ― ―
   -- FILE NAVIGATION / SEARCHING
   -- ― ― ― ― ― ― ― ― ―
-  set_highlight('Directory', colors.active_bg, colors.blue)
-  set_highlight('IncSearch', colors.active_bg, colors.orange)
-  set_highlight('Search', colors.active_bg, colors.orange)
+  set_highlight('Directory', colors.bg, colors.blue)
+  set_highlight('IncSearch', colors.bg, colors.orange)
+  set_highlight('Search', colors.bg, colors.orange)
 
   -- ― ― ― ― ― ― ― ― ―
   -- PROMPT / STATUS
@@ -297,7 +296,7 @@ function M.apply(options)
   vim.g.terminal_color_13 = colors.purple2
   vim.g.terminal_color_14 = colors.cyan2
   vim.g.terminal_color_15 = colors.white2
-  vim.g.terminal_color_background = colors.active_bg
+  vim.g.terminal_color_background = colors.bg
   vim.g.terminal_color_foreground = colors.fg
 end
 

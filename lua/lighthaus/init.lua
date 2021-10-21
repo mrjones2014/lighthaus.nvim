@@ -12,38 +12,39 @@ function M.setup(options)
     endif
   ]])
 
-  local colors = require('lighthaus.colors')
+  local utils = require('lighthaus.utils')
+  local colors = utils.clone_table(require('lighthaus.colors'))
+  local dark_bg_colors = require('lighthaus.color-overrides')
 
   if options and options.colors and type(options.colors) then
-    colors = require('lighthaus.utils').merge_tables(colors, options.colors)
+    colors = utils.merge_tables(colors, options.colors)
   end
 
   if options and options.bg_dark then
-    colors.active_bg = colors.bg_dark
-  else
-    colors.active_bg = colors.bg
+    colors.bg = dark_bg_colors.bg
+    colors.fg = dark_bg_colors.fg
   end
 
-  require('lighthaus.core').apply(options)
-  require('lighthaus.plugins.gitsigns').apply()
-  require('lighthaus.plugins.nvim-tree').apply()
-  require('lighthaus.plugins.beacon').apply()
-  require('lighthaus.plugins.ctrlp').apply()
-  require('lighthaus.plugins.fzf').apply()
-  require('lighthaus.plugins.nerdtree').apply()
-  require('lighthaus.plugins.treesitter').apply()
-  require('lighthaus.plugins.ale').apply()
-  require('lighthaus.plugins.coc').apply()
-  require('lighthaus.plugins.fugitive').apply()
-  require('lighthaus.plugins.gitgutter').apply()
-  require('lighthaus.plugins.indent-guides').apply()
-  require('lighthaus.plugins.plug').apply()
-  require('lighthaus.plugins.vim-signature').apply()
-  require('lighthaus.plugins.signify').apply()
-  require('lighthaus.plugins.startify').apply()
-  require('lighthaus.plugins.vimtex').apply()
-  require('lighthaus.plugins.vimwiki').apply()
-  require('lighthaus.plugins.bufferline').apply()
+  require('lighthaus.core').apply(colors, options)
+  require('lighthaus.plugins.gitsigns').apply(colors)
+  require('lighthaus.plugins.nvim-tree').apply(colors)
+  require('lighthaus.plugins.beacon').apply(colors)
+  require('lighthaus.plugins.ctrlp').apply(colors)
+  require('lighthaus.plugins.fzf').apply(colors)
+  require('lighthaus.plugins.nerdtree').apply(colors)
+  require('lighthaus.plugins.treesitter').apply(colors)
+  require('lighthaus.plugins.ale').apply(colors)
+  require('lighthaus.plugins.coc').apply(colors)
+  require('lighthaus.plugins.fugitive').apply(colors)
+  require('lighthaus.plugins.gitgutter').apply(colors)
+  require('lighthaus.plugins.indent-guides').apply(colors)
+  require('lighthaus.plugins.plug').apply(colors)
+  require('lighthaus.plugins.vim-signature').apply(colors)
+  require('lighthaus.plugins.signify').apply(colors)
+  require('lighthaus.plugins.startify').apply(colors)
+  require('lighthaus.plugins.vimtex').apply(colors)
+  require('lighthaus.plugins.vimwiki').apply(colors)
+  require('lighthaus.plugins.bufferline').apply(colors)
 end
 
 return M

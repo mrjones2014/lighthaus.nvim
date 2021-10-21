@@ -1,7 +1,6 @@
 local M = {}
 
-function M.apply()
-  local colors = require('lighthaus.colors')
+function M.apply(colors)
   local set_highlight = require('lighthaus.utils').set_highlight
 
   set_highlight('CocInfoHighlight', colors.purple2)

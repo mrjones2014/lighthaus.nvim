@@ -1,7 +1,6 @@
 local M = {}
 
-function M.apply()
-  local colors = require('lighthaus.colors')
+function M.apply(colors)
   require('lighthaus.utils').set_highlight('Beacon', colors.grey)
 end
 
