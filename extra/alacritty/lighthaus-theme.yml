@@ -1,7 +1,8 @@
 colors:
   # default colors
   primary:
-    background:     #18191e
+    # or use #18191E for the other Lighthaus bg color
+    background:     #000000
     foreground:     #ffee79
     dim_foreground: #21252d
 
