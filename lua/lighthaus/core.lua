@@ -7,10 +7,17 @@ function M.apply(colors, options)
   -- - - - - - - - - -
   -- LSP
   -- - - - - - - - - -
+  -- Neovim 0.5.0-0.5.1
   set_highlight('LspDiagnosticsDefaultError', colors.lsp_error, colors.bg)
   set_highlight('LspDiagnosticsDefaultWarning', colors.lsp_warning, colors.bg)
   set_highlight('LspDiagnosticsDefaultInformation', colors.lsp_information, colors.bg)
   set_highlight('LspDiagnosticsDefaultHint', colors.lsp_hint, colors.bg)
+
+  -- Neovim 0.6.0+
+  set_highlight('DiagnosticError', colors.lsp_error, colors.bg)
+  set_highlight('DiagnosticWarn', colors.lsp_warning, colors.bg)
+  set_highlight('DiagnosticInfo', colors.lsp_information, colors.bg)
+  set_highlight('DiagnosticInfo', colors.lsp_hint, colors.bg)
 
   -- ― ― ― ― ― ― ― ― ―
   -- EDITOR SETTINGS
