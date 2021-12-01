@@ -31,7 +31,6 @@ function M.apply(colors, options)
   set_highlight('DiagnosticError', colors.lsp_error, colors.bg)
   set_highlight('DiagnosticWarn', colors.lsp_warning, colors.bg)
   set_highlight('DiagnosticInfo', colors.lsp_information, colors.bg)
-  set_highlight('DiagnosticInfo', colors.lsp_hint, colors.bg)
   set_highlight('DiagnosticHint', colors.lsp_hint, colors.bg)
 
   -- ― ― ― ― ― ― ― ― ―
