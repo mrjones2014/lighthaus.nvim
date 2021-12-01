@@ -7,9 +7,27 @@ function M.apply(colors, options)
   -- - - - - - - - - -
   -- LSP
   -- - - - - - - - - -
+
+  local lsp_underline_style = formats.undercurl
+  if
+    options
+    and options.lsp_underline_style
+    and (options.lsp_underline_style == formats.underline or options.lsp_underline_style == formats.undercurl)
+  then
+    lsp_underline_style = options.lsp_underline_style
+  elseif options and options.lsp_underline_style == '' then
+    lsp_underline_style = nil
+  end
+
   -- Neovim 0.5.0-0.5.1
   set_highlight('LspDiagnosticsDefaultError', colors.lsp_error, colors.bg)
+  if lsp_underline_style then
+    set_highlight('LspDiagnosticsUnderlineError', colors.lsp_error, colors.bg, lsp_underline_style)
+  end
   set_highlight('LspDiagnosticsDefaultWarning', colors.lsp_warning, colors.bg)
+  if lsp_underline_style then
+    set_highlight('LspDiagnosticsUnderlineWarning', colors.lsp_warning, colors.bg, lsp_underline_style)
+  end
   set_highlight('LspDiagnosticsDefaultInformation', colors.lsp_information, colors.bg)
   set_highlight('LspDiagnosticsDefaultHint', colors.lsp_hint, colors.bg)
 

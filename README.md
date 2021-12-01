@@ -35,6 +35,9 @@ require('lighthaus').setup({
   bg_dark = false,
   -- see colors.lua to see colors table, set overrides here to be merged with defaults
   colors = {},
+  -- set to 'underline' to replace undercurl with underline
+  -- or empty string '' to disable
+  lsp_underline_style = 'undercurl',
 })
 ```
 
