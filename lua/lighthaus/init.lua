@@ -26,6 +26,7 @@ function M.setup(options)
   end
 
   require('lighthaus.core').apply(colors, options)
+  require('lighthaus.plugins.cmp').apply(colors)
   require('lighthaus.plugins.gitsigns').apply(colors)
   require('lighthaus.plugins.nvim-tree').apply(colors)
   require('lighthaus.plugins.beacon').apply(colors)

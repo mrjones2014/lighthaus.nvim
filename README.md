@@ -48,6 +48,7 @@ require('lighthaus').setup({
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [ale](https://github.com/dense-analysis/ale)
 - [beacon](https://github.com/DanilaMihailov/beacon.nvim)
 - [coc](https://github.com/neoclide/coc.nvim)
