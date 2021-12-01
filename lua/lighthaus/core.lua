@@ -26,12 +26,16 @@ function M.apply(colors, options)
   set_highlight('LspDiagnosticsUnderlineWarning', colors.lsp_warning, colors.bg, lsp_underline_style)
   set_highlight('LspDiagnosticsDefaultInformation', colors.lsp_information, colors.bg)
   set_highlight('LspDiagnosticsDefaultHint', colors.lsp_hint, colors.bg)
+  set_highlight('LspDiagnosticsUnderlineHint', colors.lsp_hint, colors.bg, lsp_underline_style)
 
   -- Neovim 0.6.0+
   set_highlight('DiagnosticError', colors.lsp_error, colors.bg)
+  set_highlight('DiagnosticUnderlineError', colors.lsp_error, colors.bg, lsp_underline_style)
   set_highlight('DiagnosticWarn', colors.lsp_warning, colors.bg)
+  set_highlight('DiagnosticUnderlineWarn', colors.lsp_warning, colors.bg, lsp_underline_style)
   set_highlight('DiagnosticInfo', colors.lsp_information, colors.bg)
   set_highlight('DiagnosticHint', colors.lsp_hint, colors.bg)
+  set_highlight('DiagnosticUnderlineHint', colors.lsp_hint, colors.bg, lsp_underline_style)
 
   -- ― ― ― ― ― ― ― ― ―
   -- EDITOR SETTINGS
