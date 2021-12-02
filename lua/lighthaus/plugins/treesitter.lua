@@ -11,6 +11,7 @@ function M.apply(colors)
   vim.cmd('hi link TSType Type')
 
   vim.cmd('hi link TSFunction Function')
+  set_highlight('TSFuncBuiltin', colors.cyan2)
   vim.cmd('hi link TSMethod Method')
   vim.cmd('hi link TSFuncMacro Macro')
   vim.cmd('hi link TSKeyword Keyword')
