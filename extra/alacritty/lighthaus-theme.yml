@@ -2,62 +2,62 @@ colors:
   # default colors
   primary:
     # or use #18191E for the other Lighthaus bg color
-    background:     "000000"
-    foreground:     "ffee79"
-    dim_foreground: "21252d"
+    background:     "#000000"
+    foreground:     "#ffee79"
+    dim_foreground: "#21252d"
 
   # cursor colors
   cursor:
-    text:           "18191e"
-    cursor:         "ffff00"
+    text:           "#18191e"
+    cursor:         "#ffff00"
   vi_mode_cursor:
-    text:           "18191e"
-    cursor:         "5ad1aa"
+    text:           "#18191e"
+    cursor:         "#5ad1aa"
 
   # selection
   selection:
-    text:           "ff4d00"
-    background:     "090b26"
+    text:           "#ff4d00"
+    background:     "#090b26"
 
   # searching & matching
   search:
     matches:
-      foreground:   "21252d"
-      background:   "e25600"
+      foreground:   "#21252d"
+      background:   "#e25600"
     bar:
-      background:   "cccccc"
-      foreground:   "21252d"
+      background:   "#cccccc"
+      foreground:   "#21252d"
 
   # normal term colors
   normal:
-    black:          "18191e"
-    red:            "fc2929"
-    green:          "44b273"
-    yellow:         "e25600"
-    blue:           "1d918b"
-    magenta:        "d16bb7"
-    cyan:           "00bfa4"
-    white:          "cccccc"
+    black:          "#18191e"
+    red:            "#fc2929"
+    green:          "#44b273"
+    yellow:         "#e25600"
+    blue:           "#1d918b"
+    magenta:        "#d16bb7"
+    cyan:           "#00bfa4"
+    white:          "#cccccc"
 
   # bright term colors
   bright:
-    black:          "8e8d8d"
-    red:            "ff5050"
-    green:          "50c16e"
-    yellow:         "ed722e"
-    blue:           "47a8a1"
-    magenta:        "d68eb2"
-    cyan:           "5ad1aa"
-    white:          "fffade"
+    black:          "#8e8d8d"
+    red:            "#ff5050"
+    green:          "#50c16e"
+    yellow:         "#ed722e"
+    blue:           "#47a8a1"
+    magenta:        "#d68eb2"
+    cyan:           "#5ad1aa"
+    white:          "#fffade"
 
   # dim term colors
   dim:
-    black:          "46474a"
-    red:            "ec6565"
-    green:          "72b890"
-    yellow:         "dc7c45"
-    blue:           "539d99"
-    magenta:        "d291c1"
-    cyan:           "42bdab"
-    white:          "d6d6d6"
+    black:          "#46474a"
+    red:            "#ec6565"
+    green:          "#72b890"
+    yellow:         "#dc7c45"
+    blue:           "#539d99"
+    magenta:        "#d291c1"
+    cyan:           "#42bdab"
+    white:          "#d6d6d6"
 
