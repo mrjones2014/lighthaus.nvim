@@ -54,6 +54,12 @@ function M.apply(colors, options)
   set_highlight('EndOfBuffer', colors.bg, colors.bg)
 
   -- ― ― ― ― ― ― ― ― ―
+  -- FLOATING WINDOWS
+  -- ― ― ― ― ― ― ― ― ―
+  set_highlight('NormalFloat', colors.white2, colors.black)
+  set_highlight('FloatBorder', colors.white2, colors.black)
+
+  -- ― ― ― ― ― ― ― ― ―
   -- GIT
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('gitcommitUnmerged', colors.red)
