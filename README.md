@@ -53,6 +53,7 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{25
 
 ## Plugin Support
 
+- [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
