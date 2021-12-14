@@ -56,8 +56,13 @@ function M.apply(colors, options)
   -- ― ― ― ― ― ― ― ― ―
   -- FLOATING WINDOWS
   -- ― ― ― ― ― ― ― ― ―
-  set_highlight('NormalFloat', colors.white2, colors.black)
-  set_highlight('FloatBorder', colors.white2, colors.black)
+  if options.bg_dark then
+    set_highlight('NormalFloat', colors.white2, colors.bg_light)
+    set_highlight('FloatBorder', colors.white2, colors.bg_light)
+  else
+    set_highlight('NormalFloat', colors.white2, colors.bg_dark)
+    set_highlight('FloatBorder', colors.white2, colors.bg_dark)
+  end
 
   -- ― ― ― ― ― ― ― ― ―
   -- GIT

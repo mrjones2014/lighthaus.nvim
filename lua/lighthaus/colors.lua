@@ -1,6 +1,6 @@
 local M = {
-  active_bg = '', -- this gets overridden with the right value from init.lua
-  bg = '#18191E',
+  bg = '#18191E', -- this gets set to the right value based on config
+  bg_light = '#18191E',
   bg_dark = '#000000',
   fg = '#FFFADE',
   fg_alt = '#FFEE79',
