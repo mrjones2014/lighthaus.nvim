@@ -8,6 +8,16 @@ function M.apply(colors)
   else
     set_highlight('GitSignsCurrentLineBlame', colors.non_text)
   end
+
+  set_highlight('GitSignsAdd', colors.green)
+  set_highlight('GitSignsAddLn', colors.green)
+  set_highlight('GitSignsAddInline', colors.green)
+  set_highlight('GitSignsChange', colors.blue)
+  set_highlight('GitSignsChangeLn', colors.blue)
+  set_highlight('GitSignsChangeInline', colors.blue)
+  set_highlight('GitSignsDelete', colors.red2)
+  set_highlight('GitSignsDeleteLn', colors.red2)
+  set_highlight('GitSignsDeleteInline', colors.red2)
 end
 
 return M
