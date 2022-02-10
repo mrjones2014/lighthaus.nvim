@@ -56,6 +56,7 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{25
 - [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
+- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
