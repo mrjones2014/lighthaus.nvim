@@ -321,6 +321,14 @@ function M.apply(colors, options)
   vim.cmd('hi link yamlConstant Constant')
   vim.cmd('hi link yamlKeyValueDelimiter Delimiter')
 
+  -- ― ― ― ― ― ―
+  -- ―  PERL ―
+  -- ― ― ― ― ― ―
+  -- see: https://github.com/mrjones2014/lighthaus.nvim/issues/10
+  -- regex-based Perl highlighter sets the wrong highlight group
+  -- for function arguments; this will not affect treesitter highlighting
+  vim.cmd('hi link perlSubPrototypeError perlSubPrototype')
+
   -- ― ― ― ― ― ― ― ― ―
   -- NEOVIM COLOR BUFFER
   -- ― ― ― ― ― ― ― ― ―
