@@ -38,6 +38,10 @@ require('lighthaus').setup({
   -- set to 'underline' to replace undercurl with underline
   -- or empty string '' to disable
   lsp_underline_style = 'undercurl',
+  -- make background transparent, this overrides `bg_dark`
+  transparent = false,
+  -- use an italic font for comments
+  italic_comments = false,
 })
 ```
 

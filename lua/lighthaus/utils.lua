@@ -58,23 +58,13 @@ function M.tint_lualine_color(color, bg, bg_dark)
 end
 
 function M.set_highlight(group, fg, bg, attr)
-  if fg and fg ~= '' and #fg > 0 then
-    vim.cmd('hi ' .. group .. ' guifg=' .. fg)
-  else
-    vim.cmd('hi ' .. group .. ' guifg=NONE')
-  end
-
-  if bg and bg ~= '' and #bg > 0 then
-    vim.cmd('hi ' .. group .. ' guibg=' .. bg)
-  else
-    vim.cmd('hi ' .. group .. ' guibg=NONE')
-  end
-
-  if attr and attr ~= '' and #attr > 0 then
-    vim.cmd('hi ' .. group .. ' gui=' .. attr)
-  else
-    vim.cmd('hi ' .. group .. ' gui=NONE')
-  end
+  local style = attr and 'gui=' .. attr or 'gui=NONE'
+  -- if attr == 'undercurl' or attr == 'underline' then
+  --   style = 'guisp=' .. attr
+  -- end
+  local fg_def = fg and 'guifg=' .. fg or 'guifg=NONE'
+  local bg_def = bg and 'guibg=' .. bg or 'guibg=NONE'
+  vim.api.nvim_command('highlight ' .. group .. ' ' .. style .. ' ' .. fg_def .. ' ' .. bg_def)
 end
 
 return M

@@ -3,6 +3,7 @@ local M = {}
 function M.apply(colors, options)
   local formats = require('lighthaus.formats')
   local set_highlight = require('lighthaus.utils').set_highlight
+  local config = require('lighthaus.config').config
 
   -- - - - - - - - - -
   -- LSP
@@ -47,8 +48,6 @@ function M.apply(colors, options)
   -- ― ― ― ― ― ― ― ― ―
   -- EDITOR SETTINGS
   -- ― ― ― ― ― ― ― ― ―
-  local config = require('lighthaus.config').config
-  print(config.transparent)
   set_highlight('Normal', colors.fg, config.transparent and 'NONE' or colors.bg)
   set_highlight('Cursor', colors.hl_yellow, colors.bg)
   if vim.o.cursorline then
@@ -193,7 +192,7 @@ function M.apply(colors, options)
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('Whitespace', colors.non_text)
   set_highlight('NonText', colors.non_text)
-  set_highlight('Comment', colors.grey)
+  set_highlight('Comment', colors.grey, nil, config.italic_comments and require('lighthaus.formats').italic)
   set_highlight('Delimiter', colors.white2)
 
   set_highlight('Identifier', colors.white)
@@ -215,7 +214,7 @@ function M.apply(colors, options)
   set_highlight('PreProc', colors.cyan2)
   set_highlight('Special', colors.orange2)
   set_highlight('SpecialChar', colors.fg_alt)
-  set_highlight('SpecialComment', colors.blue3)
+  set_highlight('SpecialComment', colors.blue3, nil, config.italic_comments and require('lighthaus.formats').italic)
 
   set_highlight('Tag', colors.white2)
   set_highlight('Todo', colors.fg_alt)

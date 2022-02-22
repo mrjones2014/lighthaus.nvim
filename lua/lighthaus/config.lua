@@ -5,6 +5,7 @@ local default_config = {
   colors = {},
   lsp_underline_style = 'undercurl',
   transparent = false,
+  italic_comments = false,
 }
 
 M.config = vim.deepcopy(default_config)
