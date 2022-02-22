@@ -42,6 +42,8 @@ require('lighthaus').setup({
   transparent = false,
   -- use an italic font for comments
   italic_comments = false,
+  -- use an italic font for keywords/conditionals
+  italic_keywords = false,
 })
 ```
 
