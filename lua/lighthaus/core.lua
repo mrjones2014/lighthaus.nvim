@@ -47,7 +47,9 @@ function M.apply(colors, options)
   -- ― ― ― ― ― ― ― ― ―
   -- EDITOR SETTINGS
   -- ― ― ― ― ― ― ― ― ―
-  set_highlight('Normal', colors.fg, colors.bg)
+  local config = require('lighthaus.config').config
+  print(config.transparent)
+  set_highlight('Normal', colors.fg, config.transparent and 'NONE' or colors.bg)
   set_highlight('Cursor', colors.hl_yellow, colors.bg)
   if vim.o.cursorline then
     set_highlight('CursorLine', nil, colors.black)
@@ -57,8 +59,8 @@ function M.apply(colors, options)
   set_highlight('CursorColumn')
   set_highlight('CursorLineNr', colors.hl_yellow, colors.black)
   set_highlight('ColorColumn', colors.black)
-  set_highlight('LineNr', colors.line_fg, colors.bg)
-  set_highlight('EndOfBuffer', colors.bg, colors.bg)
+  set_highlight('LineNr', colors.line_fg, config.transparent and 'NONE' or colors.bg)
+  set_highlight('EndOfBuffer', config.transparent and 'NONE' or colors.bg, config.transparent and 'NONE' or colors.bg)
 
   -- ― ― ― ― ― ― ― ― ―
   -- FLOATING WINDOWS
