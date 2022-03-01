@@ -57,7 +57,7 @@ function M.apply(colors, options)
   end
   set_highlight('CursorColumn')
   set_highlight('CursorLineNr', colors.hl_yellow, colors.black)
-  set_highlight('ColorColumn', colors.black)
+  set_highlight('ColorColumn', nil, colors.black)
   set_highlight('LineNr', colors.line_fg, config.transparent and 'NONE' or colors.bg)
   set_highlight('EndOfBuffer', config.transparent and 'NONE' or colors.bg, config.transparent and 'NONE' or colors.bg)
 
