@@ -59,9 +59,6 @@ end
 
 function M.set_highlight(group, fg, bg, attr)
   local style = attr and 'gui=' .. attr or 'gui=NONE'
-  -- if attr == 'undercurl' or attr == 'underline' then
-  --   style = 'guisp=' .. attr
-  -- end
   local fg_def = fg and 'guifg=' .. fg or 'guifg=NONE'
   local bg_def = bg and 'guibg=' .. bg or 'guibg=NONE'
   vim.api.nvim_command('highlight ' .. group .. ' ' .. style .. ' ' .. fg_def .. ' ' .. bg_def)
