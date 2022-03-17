@@ -5,6 +5,7 @@ local M = {
   fg = '#FFFADE',
   fg_alt = '#FFEE79',
   black = '#21252D',
+  blacker_than_black = '#1F1F1F',
   grey = '#8E8D8D',
   red = '#FC2929',
   red2 = '#FF5050',

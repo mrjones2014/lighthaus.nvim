@@ -67,6 +67,7 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{25
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [lsp_extensions Rust inlay hints](https://github.com/nvim-lua/lsp_extensions.nvim#inlay-hints-rust-analyzer)\*
 - [ale](https://github.com/dense-analysis/ale)
 - [beacon](https://github.com/DanilaMihailov/beacon.nvim)
 - [coc](https://github.com/neoclide/coc.nvim)
@@ -83,6 +84,16 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{25
 - [vimwiki](https://github.com/vimwiki/vimwiki)
 
 Plus Neovim's built-in LSP. Feel free to create a PR to support other plugins not listed here.
+
+\* `lighthaus.nvim` adds a highlight group `RustInlayHint` that can be used for the Rust inlay hints added by `lsp_extensions`.
+You need to specify the highlight group to use in `lsp_extensions` config. Example:
+
+```lua
+require('lsp_extensions').inlay_hints({
+  highlight = 'RustInlayHint',
+  enabled = { 'TypeHint', 'ChainingHint', 'ParameterHint' },
+})
+```
 
 ### Using Lualine Themes
 
@@ -105,3 +116,5 @@ require('lualine').setup({
 
 - [Kitty](./extra/kitty/lighthaus-theme.conf)
 - [Alacritty](./extra/alacritty/lighthaus-theme.yml)
+
+## Notes

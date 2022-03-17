@@ -45,6 +45,9 @@ function M.apply(colors, options)
   set_highlight('DiagnosticHint', colors.lsp_hint, colors.bg)
   set_highlight('DiagnosticUnderlineHint', colors.lsp_hint, colors.bg, lsp_underline_style)
 
+  -- lsp_extensions
+  set_highlight('RustInlayHint', colors.grey, colors.blacker_than_black)
+
   -- ― ― ― ― ― ― ― ― ―
   -- EDITOR SETTINGS
   -- ― ― ― ― ― ― ― ― ―
