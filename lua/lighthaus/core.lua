@@ -63,6 +63,7 @@ function M.apply(colors, options)
   set_highlight('ColorColumn', nil, colors.black)
   set_highlight('LineNr', colors.line_fg, config.transparent and 'NONE' or colors.bg)
   set_highlight('EndOfBuffer', config.transparent and 'NONE' or colors.bg, config.transparent and 'NONE' or colors.bg)
+  set_highlight('WinSeparator', config.bg_dark and colors.grey or colors.black)
 
   -- ― ― ― ― ― ― ― ― ―
   -- FLOATING WINDOWS
