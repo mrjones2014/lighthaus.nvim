@@ -220,7 +220,7 @@ function M.apply(colors, options)
   set_highlight('SpecialChar', colors.fg_alt)
   set_highlight('SpecialComment', colors.blue3, nil, config.italic_comments and require('lighthaus.formats').italic)
 
-  set_highlight('Tag', colors.white2)
+  set_highlight('Tag', colors.cyan)
   set_highlight('Todo', colors.fg_alt)
 
   -- + + + + + + + + + LANGUAGES + + + + + + + + +
