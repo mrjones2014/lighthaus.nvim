@@ -222,6 +222,10 @@ function M.apply(colors, options)
 
   set_highlight('Tag', colors.cyan)
   set_highlight('Todo', colors.fg_alt)
+  set_highlight('tsxTagName', colors.orange2)
+  vim.cmd('hi link tsxTag Tag')
+  vim.cmd('hi link jsxTag Tag')
+  vim.cmd('hi link tsxIntrinsicTagName Tag')
 
   -- + + + + + + + + + LANGUAGES + + + + + + + + +
 
