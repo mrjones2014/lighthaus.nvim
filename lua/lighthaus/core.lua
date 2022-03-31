@@ -222,12 +222,20 @@ function M.apply(colors, options)
 
   set_highlight('Tag', colors.cyan)
   set_highlight('Todo', colors.fg_alt)
+
+  -- + + + + + + + + + LANGUAGES + + + + + + + + +
+
+  -- ― ― ― ― ― ― ― ― ―
+  -- ― JSX/TSX ―
+  -- ― ― ― ― ― ― ― ― ―
   set_highlight('tsxTagName', colors.orange2)
+  set_highlight('jsxTagName', colors.orange2)
   vim.cmd('hi link tsxTag Tag')
   vim.cmd('hi link jsxTag Tag')
   vim.cmd('hi link tsxIntrinsicTagName Tag')
-
-  -- + + + + + + + + + LANGUAGES + + + + + + + + +
+  vim.cmd('hi link jsxIntrinsicTagName Tag')
+  vim.cmd('hi link typescriptParenExp tsFunction')
+  vim.cmd('hi link javascriptParenExp tsFunction')
 
   -- ― ― ― ― ― ― ― ― ―
   -- ―  C LIKE ―
