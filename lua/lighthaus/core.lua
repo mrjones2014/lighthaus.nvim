@@ -226,18 +226,6 @@ function M.apply(colors, options)
   -- + + + + + + + + + LANGUAGES + + + + + + + + +
 
   -- ― ― ― ― ― ― ― ― ―
-  -- ― JSX/TSX ―
-  -- ― ― ― ― ― ― ― ― ―
-  set_highlight('tsxTagName', colors.orange2)
-  set_highlight('jsxTagName', colors.orange2)
-  vim.cmd('hi link tsxTag Tag')
-  vim.cmd('hi link jsxTag Tag')
-  vim.cmd('hi link tsxIntrinsicTagName Tag')
-  vim.cmd('hi link jsxIntrinsicTagName Tag')
-  vim.cmd('hi link typescriptParenExp tsFunction')
-  vim.cmd('hi link javascriptParenExp tsFunction')
-
-  -- ― ― ― ― ― ― ― ― ―
   -- ―  C LIKE ―
   -- ― ― ― ― ― ― ― ― ―
   set_highlight('Macro', colors.purple2)
