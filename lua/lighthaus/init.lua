@@ -33,7 +33,6 @@ function M.setup(options)
   require('lighthaus.plugins.startify').apply(options.colors)
   require('lighthaus.plugins.vimtex').apply(options.colors)
   require('lighthaus.plugins.vimwiki').apply(options.colors)
-  require('lighthaus.plugins.bufferline').apply(options.colors)
   require('lighthaus.plugins.telescope').apply(options.colors)
 end
 

@@ -60,14 +60,14 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{25
 ## Plugin Support
 
 - [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)\*
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [lsp_extensions Rust inlay hints](https://github.com/nvim-lua/lsp_extensions.nvim#inlay-hints-rust-analyzer)\*
+- [lsp_extensions Rust inlay hints](https://github.com/nvim-lua/lsp_extensions.nvim#inlay-hints-rust-analyzer)\*\*
 - [ale](https://github.com/dense-analysis/ale)
 - [beacon](https://github.com/DanilaMihailov/beacon.nvim)
 - [coc](https://github.com/neoclide/coc.nvim)
@@ -85,7 +85,37 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{25
 
 Plus Neovim's built-in LSP. Feel free to create a PR to support other plugins not listed here.
 
-\* `lighthaus.nvim` adds a highlight group `RustInlayHint` that can be used for the Rust inlay hints added by `lsp_extensions`.
+\* Bufferline.nvim requires some configuration to integrate nicely with the theme. Recommended bufferline.nvim config:
+
+```lua
+local colors = require('lighthaus.colors')
+require('bufferline').setup({
+  options = {
+    separator_style = 'slant',
+    themable = true,
+  },
+  highlights = {
+    fill = {
+      guifg = colors.blacker_than_black,
+      guibg = colors.blacker_than_black,
+    },
+    separator = {
+      guifg = colors.blacker_than_black,
+      guibg = colors.bg_dark,
+    },
+    separator_visible = {
+      guifg = colors.blacker_than_black,
+      guibg = colors.bg_dark,
+    },
+    separator_selected = {
+      guifg = colors.blacker_than_black,
+      guibg = colors.bg_dark,
+    },
+  },
+})
+```
+
+\*\* `lighthaus.nvim` adds a highlight group `RustInlayHint` that can be used for the Rust inlay hints added by `lsp_extensions`.
 You need to specify the highlight group to use in `lsp_extensions` config. Example:
 
 ```lua
