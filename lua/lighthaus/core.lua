@@ -144,7 +144,7 @@ function M.apply(colors, options)
   -- ― ― ― ― ― ― ― ― ―
   -- FILE NAVIGATION / SEARCHING
   -- ― ― ― ― ― ― ― ― ―
-  set_highlight('Directory', colors.bg, colors.blue)
+  set_highlight('Directory', colors.bg)
   set_highlight('IncSearch', colors.bg, colors.orange)
   set_highlight('Search', colors.bg, colors.orange)
 
