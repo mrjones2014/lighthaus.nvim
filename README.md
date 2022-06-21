@@ -146,5 +146,6 @@ require('lualine').setup({
 
 - [Kitty](./extra/kitty/lighthaus-theme.conf)
 - [Alacritty](./extra/alacritty/lighthaus-theme.yml)
+- [Wezterm](./extra/wezterm/wezterm.lua)
 
 ## Notes
