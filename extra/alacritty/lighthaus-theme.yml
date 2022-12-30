@@ -24,7 +24,7 @@ colors:
     matches:
       foreground:   "#21252D"
       background:   "#E25600"
-    bar:
+    footer_bar:
       background:   "#CCCCCC"
       foreground:   "#21252D"
 
